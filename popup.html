@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WADL MOD</title>
+	<link rel="stylesheet" href="popup.css">
+	<link rel="stylesheet" href="jquery-ui-1.10.3.custom.min.css">	
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="master.js" type="text/javascript"></script>    
+	 <style>
+      .ui-autocomplete {
+        max-height: 100px;
+        overflow-y: auto;
+        /* prevent horizontal scrollbar */
+        overflow-x: hidden;
+      }
+      /* IE 6 doesn't support max-height
+       * we use height instead, but this forces the menu to always be this tall
+       */
+      * html .ui-autocomplete {
+        height: 100px;
+      }
+      </style>
+</head>
+<body>	
+	<div id="content">
+	    <h1>WADL MOD</h1>
+    	<input type="text" name="ip" id="ip" size="30" value="192.168.19.98">
+    	<input type="text" name="meName" id="meName" value="000000000001" size="30">
+    	<input type="text" name="ehName" id="ehName" value="/shelf/1/slot/11/" size="30">
+    	<input type="text" name="tpQualifier" id="tpQualifier" value="oam" size="30">
+    	<input type="button" value="Apply Now" id="btnApply">
+    	<input type="button" value="Get Server Details" id="btnFetch">
+	</div>
+	<div id="remote_content"></div>
+</body>
+</html>
